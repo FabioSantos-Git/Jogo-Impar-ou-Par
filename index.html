@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Jogo</title>
+</head>
+<style>
+    @font-face {
+        font-family: futura;
+        src: url(fonte/PT_Serif-Caption-Web-Regular.ttf);
+    }
+</style>
+<body>
+      <!-- CAMPO DO JOGO-->
+    <main class="campo">
+        <nav> <!-- CAMPO DE ESCOLHA -->
+            <p id="cabecalho">ESCOLHA</p>
+            <button type="text" id="impar"  onclick="botao('IMPAR')" value='impar' >IMPAR</button>
+            <button type="text" id="par" onclick="botao('PAR')" value='par'>PAR</button>
+        </nav>
+            <!--FIM CAMPO DE ESCOLHA -->
+        <hr>
+            <!-- CAMPO DO JOGADOR E MAQUINA -->
+        <section>
+            <div class="luz">
+                <ul id="placar">
+                    <li id="primeiro"></li>
+                    <li id="segundo"></li>
+                    <li id="terceiro"></li>
+                </ul>
+                <ul id="led">
+                    <li id="primeiro-pc"></li>
+                    <li id="segundo-pc"></li>
+                    <li id="terceiro-pc"></li>
+                </ul>
+            </div>
+            <input type="text" name="player" id="player" maxlength="1">
+
+            <p id="versus"></p>
+
+            <div id="computador"><p></p></div>
+
+            <output id="resultado">
+                <p id="num"></p>
+                <p id="tela">RESULTADO</p>
+            </output>
+
+            <div id="resposta"></div>
+
+            <button type="text" id="jogar" name="jogar">JOGAR</button>
+
+            <div id="icone">
+                <img src="img/girar.png" alt="icone" srcset="">
+            </div>
+
+            <p id="mensagem"></p>
+        </section>
+            <!-- FIM CAMPO DO JOGADOR E MAQUINA -->
+    </main>
+    
+    
+</body>
+<script src="app.js"></script>
+
+</html>

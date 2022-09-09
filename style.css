@@ -1,0 +1,317 @@
+body{
+    background-color: rgb(155, 162, 253);
+    font-family: futura;
+    font-weight: bold;
+    margin: 20px 160px;
+}
+
+#cabecalho{
+    margin: 20px 220px;
+    position: absolute;
+}
+.campo{
+    background-color: rgb(166, 206, 207);
+    margin: 40px 300px;
+    width: 500px;
+    height: 600px;
+    border-radius: 8px;
+}
+#impar{
+    margin:70px 150px;
+    height: 30px;
+    width: 60px;
+    background-color: rgb(4, 255, 4);
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px rgb(178, 190, 190);
+    margin-bottom: 10px;
+}
+#par{
+    margin: 0px -50px ;
+    height: 30px;
+    width: 60px;
+    background-color: rgb(236, 88, 88);
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px rgb(178, 190, 190);   
+}
+hr{
+    width: 90%;
+    margin-bottom: 50px;    
+}
+#player{
+    display: block;
+    height: 60px;
+    width: 60px;
+    border: ridge;
+    box-shadow: 0px 0px 3px rgb(178, 190, 190);
+    text-align: center;
+    margin: 10px 80px;
+    font-family: futura;
+    font-size: 3em;   
+}
+#versus{
+    display: block;
+    position: absolute;
+    margin: -78px 250px;
+    height: 65px;
+    border: solid 1px;
+    box-shadow: 0px 0px 5px rgb(178, 190, 190);
+    color: rgba(150, 150, 150, 0.589);  
+}
+#computador {
+    background-color: white;
+    height: 65px;
+    width: 65px;
+    text-align: center;
+    border: ridge;
+    box-shadow: 0px 0px 5px rgb(178, 190, 190);
+    position: absolute;
+    margin: -80px 360px;
+    font-family: futura;
+    font-size: 3em;   
+}
+#resultado{
+    display: block;
+    margin: 50px 110px;
+    background-color: white;
+    width: 300px;
+    height: 100px;
+    border-radius: 8px;
+    text-align: center;
+}
+#tela{
+    margin-top: 40px;
+}
+#num, #tela{
+    display: inline-flex;
+}
+#jogar{
+    margin-left: 225px; 
+    font-family: futura;   
+}
+#resposta{
+    margin: -20px 220px 20px;
+}
+#impar:hover, #par:hover{
+    transform: translateY(2px);
+    background-color: orange;
+    color: white;
+}
+img{
+    display: block;
+    margin: -5px 0px 0px;
+    width: 50px;
+}
+img:hover{
+    transform: translateY(2px);    
+}
+#icone{
+    display: none;
+    margin: -5px 230px 0px;
+    width: 50px;
+}
+li{
+    display: inline-block;    
+    background-color: white;    
+    width: 15px;
+    height: 15px;
+    border-style: groove;
+    border-color: rgba(194, 193, 193, 0.801);
+    border-radius: 50%;
+}
+ul{
+    display: inline-block;
+    margin-left: 38px;    
+}
+.luz{
+    margin-top: -50px;
+    margin-bottom: -15px;
+}
+#led{
+    margin-left: 162px;
+}
+#mensagem{
+    display: none;
+    position: absolute;
+    margin: -255px 120px;
+    border-style: outset;
+    border-radius: 8px;
+    border-color: rgb(71, 71, 71);
+    box-shadow: 1px 1px 8px black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(218, 218, 218); 
+    
+}
+ /* PARA SMARTPHONE */
+
+@media (max-width: 600px){
+
+body{
+    background-image: linear-gradient(200deg,black 50%, #4d223e);
+    color: #761BBF;
+    border-color: #761BBF ;
+    margin: auto;    
+    font-family: futura;    
+}
+.campo{
+    background-color: rgba(166, 206, 207, 0);
+    margin: 10px auto;
+    width: 400px;
+    height: 700px;
+    border-radius: 20px;
+    border-color: #761BBF;
+    border: solid;
+    font-family: futura;
+}
+#cabecalho{
+    margin: 20px 150px;
+    position: absolute;
+    text-shadow: 1px 1px 8px #6b3157;
+    font-size: 25px;
+}
+#impar{
+    margin:70px 95px 10px;
+    height: 40px;
+    width: 70px;
+    background-color: #751bbf13;
+    border-radius: 8px;
+    border-color: #761BBF;
+    color: white;    
+    text-shadow: 1px 1px 0px #be6fff;
+    font-family: futura;
+    font-size: 15px;  
+    text-align: center;    
+    
+}
+#par{
+    margin: 0px -10px ;
+    height: 40px;
+    width: 70px;
+    background-color: #751bbf10;
+    border-radius: 8px;
+    border-color: #761BBF;
+    color:white;
+    text-shadow: 1px 1px 3px #be6fff;
+    font-family: futura;  
+    font-size: 15px;
+}
+hr{
+    width: 90%;
+    margin-bottom: 50px;
+    border-color: #761BBF;
+    box-shadow: 1px 1px 4px white; 
+}
+ul{
+    display: inline-block;
+    margin-left: 0px;    
+}
+.luz{
+    margin: -40px 0px -5px 35px;
+}
+#led{
+    margin-left: 110px;
+}
+li{
+    display: inline-block;    
+    background-color: rgba(255, 255, 255, 0.055);    
+    width: 10px;
+    height: 10px;
+    border-style: groove;
+    border-color: #761BBF;
+    box-shadow: 1px 1px 4px #be6fff;
+    border-radius: 50%;
+}
+#player{
+    display: block;
+    height: 70px;
+    width: 70px;
+    border: ridge;
+    text-align: center;
+    margin: 10px 62px;
+    border-color: #761BBF;    
+    background-color: #4d223e00;
+    color: #761BBF;
+    font-family: futura;
+    font-size: 3em;
+    text-shadow: 1px 1px 3px #be6fff;
+
+}
+#versus{
+    display: block;
+    position: absolute;
+    margin: -85px 210px;
+    height: 70px;
+    border: solid 1px;
+    box-shadow: 1px 1px 4px #be6fff;
+    color: #761BBF;  
+}
+#computador {
+    background-color: rgba(255, 255, 255, 0.041);
+    height: 75px;
+    width: 75px;    
+    border: ridge; 
+    border-color: #761BBF;
+    box-shadow: 1px 1px 4px #be6fff;   
+    position: absolute;
+    margin: -90px 275px;
+    font-size: 3em;
+    text-shadow: 1px 1px 3px #be6fff;
+}
+#resultado{
+    display: block;
+    margin: 50px 80px;
+    background-color: rgba(255, 255, 255, 0.021);
+    width: 250px;
+    height: 120px;
+    border-radius: 8px;
+    text-align: center;      
+    box-shadow: 1px 1px 4px #be6fff;
+    font-size: 20px;
+}
+#tela{   
+    margin-top: center;        
+}
+#jogar{
+    margin: 30px 130px; 
+    border-color: #761BBF;
+    box-shadow: 1px 1px 1px #be6fff; 
+    border-radius: 20px; 
+    width: 150px;
+    height: 50px;
+    background-color: #4d223e0c; 
+    color: #761BBF;   
+    font-family: futura;
+    font-size: 2em;
+    text-shadow: 1px 1px 0px #be6fff; 
+}
+#resposta{
+    margin: -40px 130px 0px;
+    font-size: 2em;
+    text-shadow: 1px 1px 1px #be6fff;
+}
+img{
+    display: block;
+    margin: 20px 50px 0px;
+    width: 50px;
+}
+#icone{
+    display: none;
+    margin: -5px 130px 0px;
+    width: 50px;
+    
+}
+#mensagem{
+    display: none;
+    position: absolute;
+    margin: -275px 91px;
+    border-style: outset;
+    border-radius: 8px;
+    border-color: #761BBF;    
+    box-shadow: 1px 1px 1px #be6fff;
+    font-family: futura;
+    color: rgb(218, 218, 218); 
+    background-color: rgba(0, 128, 0, 0.014);
+    
+}
+
+    
+}
