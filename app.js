@@ -3,8 +3,6 @@ let placar = 0,
 
 var tamanho = window.screen.width;
 
-console.log()
-
     document.getElementById('computador').innerHTML = '?';
 
 document.getElementById('jogar').addEventListener('click',function numero(){
