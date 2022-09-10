@@ -1,4 +1,4 @@
-let placar = 0,
+let placar = 0;
     placarPc = 0;
 
 var tamanho = window.screen.width;
@@ -10,7 +10,7 @@ document.getElementById('jogar').addEventListener('click',function numero(){
         random = (num) => Math.floor(Math.random() * num),
         valor = random (10),
         soma = parseInt (valor) + parseInt (jogador);
-    console.log()
+    
     document.getElementById('computador').innerHTML = valor;    
         
                  //FAZ A SOMA E INDICA SE É PAR OU IMPAR
